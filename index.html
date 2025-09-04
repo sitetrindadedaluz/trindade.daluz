@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trindade da Luz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header | Nav -->
+  <header>
+    <a href="#hero">
+      <img src="imagens/logo.png" alt="Logo da Trindade da Luz" class="logo" />
+    </a>
+    <nav class="desktop-menu">
+      <ul>
+        <li>
+          <a href="#sobre-nos"><strong>História</strong></a>
+        </li>
+        <li class="separador">|</li>
+        <li>
+          <a href="#produtos"><strong>Produtos</strong></a>
+        </li>
+        <li class="separador">|</li>
+        <li>
+          <a href="#footer-contato"><strong>Contato</strong></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Nav mobile -->
+    <div class="mobile-menu-icon">
+      <button onclick="showMenu()" aria-label="Abrir menu de navegação">
+        <img src="imagens/icons/menu--v2.png" alt="Ícone do Menu Mobile" />
+      </button>
+    </div>
+    <nav class="mobile-menu">
+      <ul>
+        <li>
+          <a href="#sobre-nos"><strong>História</strong></a>
+        </li>
+        <li>
+          <a href="#produtos"><strong>Produtos</strong></a>
+        </li>
+        <li>
+          <a href="#footer"><strong>Contato</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main | Sections -->
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-conteudo  ">
+        <p>Nós somos a</p>
+        <h1>TRINDADE DA LUZ</h1>
+        <p>
+          Compartilhamos luz para o mundo, através de produtos de qualidade,
+          que possam beneficiar a todos os seres em suas buscas e práticas
+          espirituais, esotéricas e holísticas.
+        </p>
+        <a href="#sobre-nos" class="botao">Sobre</a>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section id="categoria-produtos" class="container-height">
+      <h2>CATEGORIAS</h2>
+      <div class="categoria-produtos-grid">
+        <div class="categoria-produto-item">
+          <a href="#produtos">
+            <img src="imagens/categorias-produtos/artesanato.png" alt="Ícone da Categoria: Artesanato" />
+            <p>Artesanato</p>
+          </a>
+        </div>
+        <div class="categoria-produto-item">
+          <a href="#produtos">
+            <img src="imagens/categorias-produtos/tabaco.png" alt="Ícone da Categoria: Tabaco" />
+            <p>Tabaco</p>
+          </a>
+        </div>
+        <div class="categoria-produto-item">
+          <a href="#produtos">
+            <img src="imagens/categorias-produtos/incensos.png" alt="Ícone da Categoria: Incensos" />
+            <p>Incensos</p>
+          </a>
+        </div>
+        <div class="categoria-produto-item">
+          <a href="#produtos">
+            <img src="imagens/categorias-produtos/rapes.png" alt="Ícone da Categoria: Rapés" />
+            <p>Rapés</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section id="valores" class="container-height">
+      <h2>VALORES</h2>
+      <div class="valores-img">
+        <img src="imagens/valores/valores-ancestralidade.png" alt="Ícone do Valor: Ancestralidade" />
+        <img src="imagens/valores/valores-fraternidade.png" alt="Ícone do Valor: Fraternidade" />
+        <img src="imagens/valores/valores-etica.png" alt="Ícone do Valor: Ética e Integridade" />
+        <img src="imagens/valores/valores-respeito.png" alt="Ícone do Valor: Respeito" />
+      </div>
+    </section>
+
+    <!-- Missão -->
+    <section id="missao" class="container-height">
+      <h2>MISSÃO</h2>
+      <div class="missao-conteudo">
+        <p>
+          Compartilhar luz para o mundo, através de conteúdos e produtos
+          saudáveis e de qualidade, que possam, de alguma forma, beneficiar a
+          todos os seres em suas buscas e práticas espirituais, esotéricas e
+          holísticas de auto-cura, aprimoramento pessoal e reforma íntima.
+        </p>
+        <img src="imagens/missao/velinhamissao.png" alt="Vela representando a Missão" />
+      </div>
+    </section>
+
+    <section id="diferenciais">
+      <div class="diferenciais-container">
+        <div class="diferenciais-conteudo">
+          <img src="imagens/missao/plant.svg" alt="Ícone de planta representando que os produtos são naturais" />
+          <p>Produtos Naturais</p>
+        </div>
+        <div class="diferenciais-conteudo">
+          <img src="imagens/missao/heartbeat.svg"
+            alt="Ícone de coração representando que os produtos são feitos com amor" />
+          <p>Feitos com Amor</p>
+        </div>
+        <div class="diferenciais-conteudo">
+          <img src="imagens/missao/campfire.svg" alt="Ícone fogueira representando a tradição" />
+          <p>Seguindo a Tradição</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre nós -->
+    <section id="sobre-nos" class="sobre-nos container-height">
+      <div class="sobre-nos-left">
+        <h2>SOBRE NÓS</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>
+              Guiado pelo sentir, a partir de experiências espirituais
+              ritualísticas e transformadoras com as medicinas da floresta,
+              Manoel Luz, feitor rapezeiro e idealizador da Trindade da Luz,
+              inicia um processo de expressão artística, recebendo o chamado
+              para se tornar alquimista rapezeiro.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-nos-right">
+        <div class="imagem">
+          <img src="imagens/manoel.png" alt="Imagem do fundador, Manoel da Luz" />
+          <p class="legenda">Fundador<br /><strong>Manoel DA LUZ</strong></p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+      <h2>PRODUTOS</h2>
+      <div class="produtos-grid">
+        <div class="produto">
+          <img src="imagens/produtos/incensopremium.png" alt="Imagem do Produto: Incensos Fênix" />
+          <h3>Incensos Premium</h3>
+          <div class="descricao">
+            <span>Vários aromas</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="imagens/produtos/incenso.png" alt="Imagem do Produto: Incensos Fênix" />
+          <h3>Incensos Fênix</h3>
+          <div class="descricao">
+            <span>Vários aromas</span>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/produtos/cachimbo.png" alt="Imagem do Produto: Cachimbo artesanal" />
+          <h3>Cachimbo Artesanal</h3>
+          <div class="descricao">
+            <span>Feito à mão</span>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/produtos/incensario.png" alt="Imagem do Produto: Incensário Invertido" />
+          <h3>Incensário Invertido</h3>
+          <div class="descricao">
+            <span>Menos sujeira</span>
+
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/produtos/tambor.png" alt="Imagem do Produto: Tambor Ritualístico" />
+          <h3>Tambor</h3>
+          <div class="descricao">
+            <span>Feito com pele</span>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/produtos/rapes.png" alt="Imagem do Produto: Rapés Sagrados" />
+          <h3>Rapés</h3>
+          <div class="descricao">
+            <span>Diversos tipos</span>
+          </div>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/produtos/aplicador.png" alt="Imagem do Produto: Aplicador de Rapé" />
+          <h3>Tipi</h3>
+          <div class="descricao">
+            <span>Vários tipos</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="imagens/produtos/kuripe.png" alt="Imagem do Produto: Aplicador de Rapé" />
+          <h3>kuripe</h3>
+          <div class="descricao">
+            <span>Vários tipos</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="imagens/produtos/tabaco.png" alt="Imagem do Produto: tabaco" />
+          <h3>Tabaco</h3>
+          <div class="descricao">
+            <span>Vários tipos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Envio -->
+    <section id="envio" class="container-height">
+      <h2>Enviamos para todo o Brasil</h2>
+      <div class="envio-conteudo envio-bottom ">
+        <div class="envio-bottom-left">
+          <p>
+            Cuidamos da entrega para que você receba com tranquilidade aquilo
+            que a ancestralidade nos confiou.
+          </p>
+        </div>
+        <div class="envio-bottom-right">
+          <img src="/imagens/icons/package.png" alt="" />
+        </div>
+      </div>
+      <a href="https://wa.me/5551980202678" class="botao linkwpp" target="_blank"><img src="imagens/icons/whatsapp.png"
+          alt="Ícone do Whatsapp" />Entrar em contato</a>
+    </section>
+
+    <!-- Whatsapp fixo -->
+    <a href="https://wa.me/5551980202678" class="whatsapp-fixo" target="_blank" rel="noopener noreferrer">
+      <img src="imagens/icons/whatsapp.png" alt="Ícone do Whatsapp" />
+    </a>
+
+    <div class="linha-divisoria">
+      <div class="linha-conteudo">
+        <span>✶ Xamanismo ✶ Rapé ✶ Medicinas Sagradass ✶ </span>
+        <span> Xamanismo ✶ Rapé ✶ Medicinas Sagradass </span>
+        <span>✶ Xamanismo ✶ Rapé ✶ Medicinas Sagradass ✶ </span>
+        <span> Xamanismo ✶ Rapé ✶ Medicinas Sagradass </span>
+        <span>✶ Xamanismo ✶ Rapé ✶ Medicinas Sagradass ✶ </span>
+        <span> Xamanismo ✶ Rapé ✶ Medicinas Sagradass </span>
+        <span>✶ Xamanismo ✶ Rapé ✶ Medicinas Sagradass ✶ </span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="imagens/logo.png" alt="Logo Trindade da Luz" />
+      </div>
+
+      <div class="footer-links">
+        <h4>Home</h4>
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#produtos">Artesanatos</a></li>
+          <li><a href="#produtos">Tabaco</a></li>
+          <li><a href="#produtos">Incensos</a></li>
+          <li><a href="#produtos">Rapé</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-about">
+        <h4>Sobre a Trindade da luz</h4>
+        <p>
+          Compartilhamos luz para o mundo, através de produtos de qualidade,
+          que possam beneficiar a todos os seres em suas buscas e práticas
+          espirituais, esotéricas e holísticas.
+        </p>
+      </div>
+
+      <div id="footer-contato">
+        <a href="https://wa.me/5551980202678" target="_blank" rel="noopener noreferrer">
+          <img src="imagens/icons/whatsapp.png" alt="Ícone do Whatsapp" />
+          (51) 98020-2678
+        </a>
+        <a href="http://instagram.com/trindade.daluz" target="_blank" rel="noopener noreferrer">
+          <img src="imagens/icons/instagram.png" alt="Ícone do Instagram" />
+          @trindade.daluz
+        </a>
+      </div>
+    </div>
+
+    <hr class="footer-linha" />
+
+    <div class="footer-bottom">
+      <div class="footer-links-legais">
+        <a href="#">Cookies</a>
+        <a href="#">Termos e condições</a>
+        <a href="#">Política de retorno</a>
+      </div>
+      <p class="copyright">© 2025 Trindade da luz</p>
+    </div>
+  </footer>
+
+
+  <!-- Modal de Aviso +18 -->
+  <div class="modal fade" id="ageModal" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-lg border-0" style="border-radius: 12px;">
+        <div class="modal-header bg-dark text-white"
+          style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
+          <h5 class="modal-title fw-bold" id="ageModalLabel">⚠️ Atenção</h5>
+        </div>
+        <div class="modal-body text-center">
+          <h4 class="fw-bold">Conteúdo para Maiores de 18 anos</h4>
+          <p class="mt-2 text-secondary" style="font-size: 15px; line-height: 1.5;">
+            Este site comercializa produtos como <strong>rapé</strong>, <strong>tabaco</strong> e
+            itens relacionados a <strong>práticas espirituais</strong>.
+            Para continuar, você precisa confirmar que possui <strong>18 anos ou mais</strong>.
+          </p>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button id="btnExit" type="button" class="btn btn-outline-secondary px-4">Sair</button>
+          <button id="btnAccept" type="button" class="btn btn-success px-4">Tenho +18 anos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ageModalEl = document.getElementById("ageModal");
+      const btnAccept = document.getElementById("btnAccept");
+      const btnExit = document.getElementById("btnExit");
+
+      // Se o usuário ainda não confirmou a idade, abre o modal automaticamente
+      if (!localStorage.getItem("ageConfirmed")) {
+        const ageModal = new bootstrap.Modal(ageModalEl);
+        ageModal.show();
+      }
+
+      // Botão "Tenho +18 anos"
+      btnAccept.addEventListener("click", function () {
+        localStorage.setItem("ageConfirmed", "true");
+        const modal = bootstrap.Modal.getInstance(ageModalEl);
+        modal.hide();
+      });
+
+      // Botão "Sair" → redireciona
+      btnExit.addEventListener("click", function () {
+        window.location.href = "https://www.google.com";
+      });
+    });
+  </script>
+
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
